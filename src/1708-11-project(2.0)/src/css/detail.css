@@ -1,0 +1,153 @@
+/*---------------------------李孟辉（商品详细信息部分css）----------------------------------*/
+#detailbox .container{border:1px solid #ccc;}
+#detailbox .detail_l{width: 411px;}
+.detail_l .imgbox li, .detail_l .showbox li{float:left;}
+.detail_l .imgbox img{height: 410px;width: 410px;}
+.showimg{height: 60px;width: 60px;border:1px solid #ccc;margin-right:5px;}
+.detail_l .showbox .but{width: 30px;height: 60px;}
+.show_active{border:1px solid orange;margin-right:5px;height: 60px;width: 60px;}
+#detailbox .detail_m{width: 366px;}
+.detail_m .det_m_t{border-top:10px solid #E7E7E7;}
+.detail_m .det_m_t h2{font-size: 15px;font-weight: bold;color:#000;}
+.detail_m .det_m_t h2 span{color:#999999;font-size: 13px;margin-left: 5px;font-weight: normal;}
+.detail_m .det_m_t table{height: 185px;width: 358px;border-collapse: collapse;margin-bottom: 10px;}
+.det_m_t table td{height: 30px;border:1px solid #999;}
+.det_m_t table td:last-child{color:red;}
+.det_m_t table tr:nth-child(1),tr:nth-child(3),tr:nth-child(5){background-color:#E3E3E3;}
+.detail_m .det_m_m{height: 128px;width: 366px;background-color:#DFDFDF;border-radius: 5px;position:relative;padding:10px 0 0 8px;}
+.det_m_span{padding-left: 5px;color:red;}
+.det_m_sale{position:absolute;right:0;top:0;}
+.detail_m .det_m_m p{color:red;}
+.det_m_s{margin-top:20px;}
+.det_size li,.det_color li{float:left;height: 22px;width: 38px;border:1px dashed #ccc;margin-left:15px;text-align:center;position:relative;}
+.det_size span{padding-right:6px;}
+.det_size i,.det_color i{display: block;width: 11px;height: 11px;background:url('../images/det_s1.png');
+        position:absolute;bottom:0;right:0;z-index:-1;}
+#det_active{float:left;height: 22px;width: 38px;border:1px solid orange;margin-left:15px;text-align:center;position:relative;}
+.det_m_s .checkbox{height: 26px;background-color: #DFDFDF;margin-top:5px;line-height: 26px;}
+.det_m_b{height: 120px;margin-top:10px;border-top:1px dashed #000;position:relative;}
+.det_m_b .addTocar{position:absolute;top:0;right:0;display:block;}
+.det_m_b .qty{margin-top:46px;position:relative;}
+.qty input{width: 47px;height: 22px;border:1px solid #ccc;font-size: 14px;text-align: center;}
+#detailbox .detail_r{width: 200px;}
+.detail_r .det_r_t{height: 62px;border-bottom: 1px dashed #ccc;padding-left:30px;}
+.detail_r h2{font-size: 16px;font-weight: bold;text-align: center;color:#58bc58;height: 30px;line-height: 30px;}
+.det_r_t .star li{float:left;width: 16px;height: 16px;background:url('../images/det_star.png');}
+#star{background: url('../images/det_bristar.png');}
+.det_r_m ul{height: 99px;padding-left: 38px;width: 195px;position:relative;}
+.det_r_m ul li{height: 30px;line-height: 30px;}
+.det_r_m ul i{display:block;width: 17px;height: 24px;background:url('../images/det.fw.png');position:absolute;left:18px;}
+/*-----------------------------李孟辉（商品评价部分css结束）-------------------------------------------*/
+/*------------------------李志杰（商品评价部分css开始）---------------------------------*/
+#main .main_b{
+    width: 980px;
+    height: 231px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+#main .main_b .active{
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-weight: 900;
+}
+#main .main_b .main_bt{
+    border-bottom: 1px solid #ccc;
+}
+#main .main_b .main_bt h4{
+    width: 144px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+}
+#main .main_b .main_bt div{
+    float: left;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+#main .main_b .main_bb .main_bbl{
+    padding-top: 5px;
+    line-height: 14px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+#main .main_b .main_bb .main_bbl ul{
+    width: 160px;
+}
+#main .main_b .main_bb .main_bbr{
+    background: url('../images/xiangqing11.png') no-repeat;
+    background-position: 0 13px;
+    width: 200px;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+#main .main_b .main_bb .main_bbr p{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    height: 12px;
+}
+#main .main_b .main_bb .main_bbr h4{
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #FF4500;
+    margin-top: 10px;
+}
+#main .main_b .main_bb .main_bbr img{
+    margin-top: 10px;
+}
+/*优化部分*/
+#main .c_t_l li .ave_rate li,.grade_comment li{float:left;}
+.grade_comment{padding:15px;}
+/*优化结束*/
+/*-------------------------------------------------------------*/
+#main .particulars{width: 740px;height: 500px;margin-top:20px;}
+#main .comment{width: 740px;}
+#main .grade{width: 740px;height: 393px;}
+#main .recommend{width: 235px;height:1678px;margin-top:20px;box-shadow:-2px 0 1px 0px #ccc;}
+/*----------------particulars----------------*/
+#main .particulars h3,.comment h3{display:block;width: 740px;padding-top:3px;padding-left:2px;height: 28px;font-size:12px;color:#333333;font-weight:bold;border-bottom:2px solid #333333;}
+#main .comment h3{width: 740px;height: 44px;padding-top:18px;}
+/*----------------comment_t-------------------------*/
+#main .comment .comment_t{width: 740px;height: 112px;background:#EFEFEF;margin-top:2px;padding-top:14px;}
+#main .comment .comment_t .c_t_l{padding-left:10px;}
+#main .comment .comment_t .c_t_l li{font-size:10px;}
+#main .comment .comment_t .c_t_l li i{font-size:22px;color:#FFA402;}
+#main .comment .comment_t .c_t_l li i:nth-child(5){color:#ADADAD;}
+#main .comment .comment_t .c_t_r li{font-size:10px;}
+#main .comment .comment_t .c_t_r progress{display:block;width: 135px;float: left;height: 10px;background:green;}
+/*------------------------recommend----------------*/
+#main .recommend h3{display:block;width: 236px;height: 28px;background:#505050;color:#fff;font-size:10px;text-align:center;line-height: 28px;}
+
+#rec_list p{font-size:10px;}
+#rec_list ul{padding-left:40px;}
+#rec_list .rec_m{color:#FF454A;}
+#rec_list .rec_p4{color:#4C8D8D;}
+/*-----------------comment_b--------------------*/
+
+/*------------grade--------------------------------------*/
+#main .grade textarea{display:block;width:550px;height:180px;border:1px solid #ccc;}
+#main .grade input{border:1px solid #ccc;}
+#vCode {width: 52px;height: 25px;text-align:center;}
+#grade_i1{width: 184px;height: 24px;}
+#file{margin-bottom:10px;}
+#code{display:inline-block;height: 25px;width: 120px;text-align:center;background:#737373;color:#fff;line-height: 25px;border-radius:5px;margin-left:6px;margin-bottom:10px;}
+#grade_btn{background:#F8901B;color:#fff;display:block;width: 64px;height: 32px;line-height: 32px;text-align:center;font-size:10px;color:#fff;}
+/*------------------------------------comment_b--------------------*/
+/*#comment_b li{display:block;padding:28px 12px 12px 12px;border-bottom:1px dashed #ccc; }*/
+#comment_b .comment_bLi{padding:28px 12px 12px 12px;border-bottom:1px dashed #ccc; }
+#comment_b .comment_bLi .comment_bl{width: 140px;float:left;}
+#comment_b .comment_bLi .s0{width: 555px;float:right;}
+#comment_b li img{display:inline-block;float: left;}
+/*#comment_b li span{display:inline-block;float: left;}*/
+/*----------------------------李志杰（商品评价部分结束css样式结束）-------------------*/

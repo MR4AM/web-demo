@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+     }
+.clearfix:after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow: hidden;
+    visibility: hidden;
+    zoom:1;
+}
+*{
+  box-sizing: border-box;
+}
+a{color:#666; text-decoration:none;}
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.container{  /*版心 提取 */
+    width: 982px;margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+
+/*公共部分*/
+/*头部导航开始*/
+
+
+/*尾部部导航开始*/
+/*字体图表*/
+@font-face {
+  font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1507035361464'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1507035361464#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.ttf?t=1507035361464') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1507035361464#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-left-copy:before { content: "\e501"; }
+
+.icon-xiangshangjiantou:before { content: "\e76b"; }
+
+.icon-jiantou:before { content: "\e60a"; }
+
+@font-face {
+  font-family: "iconfont1";
+  src: url('../font_1/iconfont.eot?t=1507341796594'); /* IE9*/
+  src: url('../font_1/iconfont.eot?t=1507341796594#iefix') format('embedded-opentype'), /* IE6-IE8 */
+ 
+  url('../font_1/iconfont.ttf?t=1507341796594') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font_1/iconfont.svg?t=1507341796594#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont1 {
+  font-family:"iconfont1" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.youjiantou:before { content: "\e606"; }
+
+.gongyongshuangjiantouyou:before { content: "\e78d"; }
+
+.zhuye:before { content: "\e51b"; }
+
+.zhengfangxingjian:before { content: "\e503"; }
+.icon-gouwuche:before { content: "\f0148"; }
+
+.icon-iconfontyoujiantou:before { content: "\e606"; }
+
+.icon-gongyongshuangjiantouyou:before { content: "\e78d"; }
+
+.icon-btn-del:before { content: "\e63a"; }
+
+.icon-xiangshangjiantou:before { content: "\e76b"; }
+
+.icon-xiangxiajiantou:before { content: "\e76c"; }
+
+.icon-zhuye:before { content: "\e51b"; }
+
+.icon-yousanjiao:before { content: "\e63b"; }
+
+.icon-zhengfangxingjian:before { content: "\e503"; }
+
+/*余鹏城（二级导航）*/
+#outlet{width: 100%;height:3000px;min-width: 982px;}
+#y_header{background-color: #FF4500;}
+#y_header .container{height: 88px;}
+#y_nav{background-color: #2B2B2B;}
+#y_nav .container .nav_l{
+    width: 212px;height: 30px;padding-left: 10px;position:relative;
+}
+#y_nav .container .nav_l i{
+    position:absolute;right: 10px;top:7px;color:#fff;font-size: 20px;
+}
+ .nav_l span{
+   display:block; font-size: 14px;font-weight: bold;line-height: 30px;
+   color:#CFCFCF;
+}
+.navl_list{
+    width: 212px;position: absolute;left: 0;top: 30px;
+    border-left: 3px solid #DDDDDD;border-bottom: 3px solid #DDDDDD;
+}
+ .navl_list li{
+    height: 71px;padding-top: 8px;padding-left: 8px;position:relative;
+}
+.navl_list li h3 a{
+    font-size: 12px;line-height: 22px;font-weight: bold;color:#404040;
+}
+.nav_l .navl_list li b{
+    font-size: 12px;margin-right: 14px;
+}
+.navl_list li b a{
+    color:#5A5A5A;font-weight: normal;
+}
+#y_nav .container .nav_l .navl_list li i{
+    right: 2px;top: 13px;font-size: 12px;color:#ddd;
+}
+#y_nav .container .nav_c li{float:left;}
+#y_nav .container .nav_c li a{
+    display: block;height: 30px;padding-top: 9px;
+}
+#y_nav .container .nav_c li a span{
+    display:block;
+    padding:0 16px;font-size: 12px;line-height: 12px;
+    color:#fff;border-right:1px solid #fff;
+}
+#y_nav .container .nav_c li a:hover{
+    background-color: #E54205;margin-left: -1px;padding-left: 1px;
+}
+#y_nav .container .nav_c li a:hover span{
+    border-right: 1px solid #E54205;
+}
+#y_nav .container .nav_r{
+    width: 150px;height: 30px;background: url("../images/nav_r.png") no-repeat;
+}
+/*-------------------------李孟辉-（三级导航）----------------------------------*/
+.nav_li{
+  position:relative;
+}
+#y_nav .container .navl_list .navl_list2{
+  position:absolute;left:209px;width:580px;
+  z-index:1000;color:#CFCFCF;background-color:#404040;display:none;}
+.thirdnav_l{
+  width: 408px;
+  border-right:1px dashed #ccc;
+  margin-left:10px;
+}
+.thirdnav_l h3{
+    border-bottom: 2px solid #fff;
+    height: 24px;
+    line-height: 24px;
+}
+.thirdnav_l ul{
+  width: 125px;
+}
+.thirdnav_l ul li{
+  height: 22px;
+}
+.thirdnav_l ul li a{
+  color:#C6CFB4;
+}
+.thirdnav_l ul li a:hover{
+  color:orange;
+}
+.thirdnav_l_b1,.thirdnav_l_m,.thirdnav_l_b2{
+  height: 52px;
+}
+/*-----------------------------------------三级导航结束------------------------------------------*/
+/*补充代码：*/
+header .container{
+    height: 88px;
+}
+#toubu .tou_2 .in1{
+    outline:none;
+    border:1px solid #000;
+    background-color: #CFCFCF;
+}
+#y_nav .container .nav_l:hover .navl_list{
+    z-index: 10;
+    opacity: 1;
+    background-color: #fff;
+}
+.zindex{
+    z-index: 100;
+}
+/*导航部分补充代码（李孟辉）*/
+  #y_nav .container .nav_active{
+      background-color:#2B2B2B;
+  }
+/*------------------（头部样式）-----------------------*/
+#toubu{height: 89px;background:#FF4500;}
+#toubu .welcome{height: 22px;}
+#toubu .welcome .welcome_l li{float: left;}
+#toubu .welcome .welcome_l span{display:block;padding-right:6px;line-height: 22px;font-size:12px;color:#FFFCE7;}
+#toubu .welcome .welcome_r li{float: left;}
+#toubu .welcome .welcome_r a{display:block;line-height: 22px;font-size:12px;color:#FFFCE7;padding-left:15px;}
+#toubu .welcome .welcome_r a i{font-size:8px;}
+#toubu .welcome_r>li{
+    position:relative;
+}
+#toubu .welcome_r_u1{
+    position:absolute;
+    width: 130px;
+    box-shadow:2px 2px 1px 1px grey;
+    background-color: white;
+    z-index:2; 
+    display: none;
+    padding-bottom: 10px;
+ 
+}
+#toubu .welcome_r_u1>li{   
+    width: 130px;
+    border-bottom: 1px dashed grey;
+    padding: 4px 5px 0 5px;
+}
+/*------------头部补充代码（李孟辉）----------*/
+#toubu .welcome_r_u1>li span{
+  display:inline-block;
+  width: 28px;
+  height: 22px;
+  background:url('../images/top.fw.png') 0px 0px;
+}
+.t_shopcar{width: 230px;height: 280px;background-color: #fff;position:absolute;z-index:2;display:none;box-shadow:-2px 2px 1px 1px grey;}
+.tshopcar:hover .t_shopcar{display:block;}
+/*------------补充代码结束----------*/
+#toubu #welcome_r_u1{
+    color: black;
+    font-size: 12px;
+    line-height: 24px;
+    width: 90px;
+    display: inline-block;
+    padding: 0;
+}
+#toubu .welcome_r li:hover{
+    background-color: white;
+}
+#toubu .welcome_r li:hover a{
+    color: red;
+    text-decoration:none;
+}
+#toubu .welcome_r li:hover ul{
+    display: block;
+}
+/*--------------------------------------------------头部搜索栏------------------------------------------------------------------------------*/
+#toubu .search0{
+  height:42px;
+  position:relative;
+}
+#toubu .search{
+  background-color:#FF4500;
+  position:fixed;
+  z-index: 10000;
+  top:0;
+  left:0;
+  width:100%;
+}
+#toubu .search_logo{
+  margin-right:86px;
+}
+#toubu .search_logo h1{width: 253px;height:42px;background:url(../images/logo.png) no-repeat;}
+#toubu .search_sousuo{width: 438px;height:42px;}
+#toubu .search_sousuo .s_s_t{width: 438px;height: 42px;padding-top:8px;}
+#toubu .search_sousuo .s_s_t span{display:block;width: 437px;height: 30px;border:1px solid #593B3A;}
+#toubu .search_sousuo .s_s_t span .kuang{display:block;width: 355px;float: left;padding-left:8px;height: 30px;background:#CFCFCF;font-size:10px;color:#837575;}
+#toubu .search_sousuo .s_s_t span .anniu{display:block;float: left;height: 30px;width: 80px;background:#5B403A;font-size:12px;color:#fff;}
+#toubu .toubu_b{
+  height:25px;
+  position:relative;
+}
+#toubu .toubu_b .toubu_b_c{
+  margin-left:340px;
+}
+#toubu .toubu_b .toubu_b_c>a{
+font-size:12px;color:#fff;
+}
+#toubu .toubu_b_phone{
+position:absolute;
+right:228px;
+top:-27px;
+z-index: 1;
+}
+#toubu .toubu_b_phone{font-size:16px;color:#FFFFFF;}
+#toubu .toubu_b_phone i{font-size:20px;}
+
+/*-----------------头部样式结束------------------------*/
+
+/*-----------------------李志杰（底部样式）-------------------------------------*/
+#dibu .link{height:155px;border-top:2px solid #5A5A5A;padding-top:12px;}
+/*------------------------link1---------------------*/
+#dibu .link .link1{width: 179px;float: left;padding-left:5px;}
+#dibu .link .link1 h3{font-size:12px;color:#333333;font-weight:bold;}
+#dibu .link .link1 ul {margin-top:10px;}
+#dibu .link .link1 ul li{font-size:12px;line-height: 18px;color:#333333;}
+/*------------------------link2---------------------*/
+#dibu .link .link2{width: 181px;float: left;}
+#dibu .link .link2 h3{font-size:12px;color:#333333;font-weight:bold;}
+#dibu .link .link2 ul {margin-top:10px;}
+#dibu .link .link2 ul li{font-size:12px;line-height: 18px;color:#333333;}
+/*----------------------link3---------------------*/
+#dibu .link .link3{width: 179px;float: left;}
+#dibu .link .link3 h3{font-size:12px;color:#333333;font-weight:bold;}
+#dibu .link .link3 ul {margin-top:10px;}
+#dibu .link .link3 ul li{font-size:12px;line-height: 18px;color:#333333;}
+/*--------------------------link4-----------------------*/
+#dibu .link .link4{width: 195px;float: left;}
+#dibu .link .link4 h3{font-size:12px;color:#333333;font-weight:bold;}
+#dibu .link .link4 ul li{display:block;height: 20px;margin-bottom:8px;}
+#dibu .link .link4 ul li i {display:block;float: left;width: 23px;height: 20px;}
+#dibu .link .link4 ul li span{display:block;height: 10px;font-size:10px;}
+#dibu .link .link4 ul li:nth-child(1) i{background:url(../images/facebook.png) no-repeat 0 2px;}
+#dibu .link .link4 ul li:nth-child(2) i{background:url(../images/twitter.png) no-repeat 0 2px;}
+#dibu .link .link4 ul li:nth-child(3) i{background:url(../images/ob.png) no-repeat 0 2px;}
+/*---------------------------link5------------------------*/
+#dibu .link .link5{width:241px;float: left;}
+#dibu .link .link5 .photo{width: 40px;height: 84px;border-left:1px solid #ccc;background:url(../images/xinfeng.png) no-repeat;float: left;}
+#dibu .link .link5 p{font-size:10px;color:#333333;}
+#dibu .link .link5 .kuang{display:block;width: 166px;height: 16px;border:1px solid #5A5A5A;font-size:8px;margin:8px 0 5px;padding-left:4px;}
+#dibu .link .link5 .anniu{display:block;width: 80px;height: 22px;color:#DCDCDB;font-size:8px;background:#575757;}
+/*----------------------支付机构栏---------------------------*/
+#dibu .money {width: 708px;height: 32px;margin:0 auto;}
+#dibu .money>ul li{float: left;margin:0 4px;}
+#diu .money>ul li a{display:block;width: 51px;height: 32px;background:url(../images/VISA.png);}
+/*----------------------版权底栏----------------------*/
+#dibu .container>p{
+  height:32px;
+  text-align:center;font-size:10px;}
+#dibu .container>p a{color:#FF4552;}
+/*--------------------李志杰-------------------*/
+/*---------------------李志杰(吸顶+返回顶部)-----------------------------------*/
+#xiding {height: 42px;width: 100%;background-color:#FF4500;}
+#main{position:relative;}
+#xiding .i1{display:inline-block;width: 253px;height: 42px;background:url(../images/logo.png) no-repeat;margin-right:66px;}
+#xiding .i2{display:inline-block;width: 480px;height: 42px;background:url(../images/sousuo.png) no-repeat;}
+.fhdb{width: 50px;height: 163px;position:fixed;right:50px;top:420px;}
+
+/*--------------------李志杰-------------------*/
